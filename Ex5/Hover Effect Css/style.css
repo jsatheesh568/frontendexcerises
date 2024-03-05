@@ -1,0 +1,11 @@
+button{
+color:black;
+background-color:white;
+}
+button:hover{
+color:gold;
+background-color:black;
+}
+
+button{ color:black; 
+  background-color:white; transition:0.3s; }
