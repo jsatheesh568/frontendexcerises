@@ -1,4 +1,4 @@
-# Frontend Exercises Self-Workout
+# Frontend Exercises Self-Workout for learning HTML, CSS and JS
 
 Welcome to the Frontend Exercises Self-Workout! This repository contains a set of exercises to help you practice and enhance your skills in HTML, CSS, and JavaScript.
 
