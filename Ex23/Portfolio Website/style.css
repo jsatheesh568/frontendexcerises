@@ -33,9 +33,46 @@ header nav .logo {
   margin-right: 3rem;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: var(--bgDark);
+  padding-top: 60px; /* Space for the header */
+  transition: left 0.3s ease; /* Smooth sliding effect */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 20px;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
+
+
 .container {
   max-width: 1152px;
   padding: 0 15px;
