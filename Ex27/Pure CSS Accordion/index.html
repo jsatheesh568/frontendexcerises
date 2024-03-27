@@ -6,9 +6,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'><link rel="stylesheet" href="./style.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+ 
+    
 <!-- partial:index.partial.html -->
 <h1>Pure CSS Accordion <sup>2.0</sup></h1>
 <div class="row">
@@ -56,6 +59,41 @@
   </div>
 </div>
 <!-- partial -->
+<h2>Accordion with symbols</h2>
+<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>It is important to take care of the pain itself, and it will be followed by the growth of the patient, but at the same time it will happen that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>It is important to take care of the pain itself, and it will be followed by the growth of the patient, but at the same time it will happen that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>It is important to take care of the pain itself, and it will be followed by the growth of the patient, but at the same time it will happen that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it.</p>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
   
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 </body>
 </html>
+
+
+
